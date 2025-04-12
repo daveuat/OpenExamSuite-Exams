@@ -3907,6 +3907,70 @@ What is the maximum amount of time it may take for a device to apply the new con
 Recently enrolled Windows devices checked in more regularly (Every 3 minutes for 30 minutes), however machines that have not enrolled recently will not.
 [Manage device sync in Intune - Training | Microsoft Learn: https://learn.microsoft.com/training/modules/monitor-device-profiles/3-manage-device-sync-intune]</Explanation>
         </Question>
+        <Question>
+          <No>117</No>
+          <Text>You have a Microsoft 365 subscription that uses Microsoft Intune.
+
+You plan to implement a bring your own device (BYOD) policy.
+
+You need to ensure that any device connecting to the environment is subject to a Compliance policy. Devices that do not have a policy assigned should be marked as non-compliant.
+
+What should you configure first?</Text>
+          <Answer>68</Answer>
+          <IsMultipleChoice>false</IsMultipleChoice>
+          <Options>
+            <Option>
+              <Alphabet>65</Alphabet>
+              <Text>a Compliance policy</Text>
+            </Option>
+            <Option>
+              <Alphabet>66</Alphabet>
+              <Text>a Conditional Access policy</Text>
+            </Option>
+            <Option>
+              <Alphabet>67</Alphabet>
+              <Text>an App Protection policy</Text>
+            </Option>
+            <Option>
+              <Alphabet>68</Alphabet>
+              <Text>the Compliance Policy settings</Text>
+            </Option>
+          </Options>
+          <Explanation>By default, devices without a Compliance policy are still considered compliant. In order to ensure that any device that connects to the environment is subject to a Compliance policy in order to be considered compliant, you need to change the Compliance Policy settings to mark devices without a policy to be non-compliant. [Device compliance policies in Microsoft Intune | Microsoft Learn: https://learn.microsoft.com/mem/intune/protect/device-compliance-get-started#compliance-policy-settings]</Explanation>
+        </Question>
+        <Question>
+          <No>118</No>
+          <Text>Your company has migrated from its on-premises Active Directory to Microsoft Entra ID and is now using Microsoft Intune for device management. The IT department needs to ensure that all Windows devices comply with the organization's security policies, including the implementation of Windows Hello for Business.
+
+You need to enforce compliance policies and ensure that Windows Hello for Business is configured on all Windows devices.
+
+Each correct answer presents part of the solution. Which two actions should you take?</Text>
+          <Answer>0</Answer>
+          <IsMultipleChoice>true</IsMultipleChoice>
+          <Answers>
+            <char>65</char>
+            <char>66</char>
+          </Answers>
+          <Options>
+            <Option>
+              <Alphabet>65</Alphabet>
+              <Text>Deploy a device configuration profile in Intune to configure Windows Hello for Business on all devices.</Text>
+            </Option>
+            <Option>
+              <Alphabet>66</Alphabet>
+              <Text>Create a compliance policy in Intune that requires Windows Hello for Business.</Text>
+            </Option>
+            <Option>
+              <Alphabet>67</Alphabet>
+              <Text>Create a Conditional Access policy in Microsoft Entra ID to restrict access to compliant devices.</Text>
+            </Option>
+            <Option>
+              <Alphabet>68</Alphabet>
+              <Text>Use Group Policy to configure Windows Hello for Business.</Text>
+            </Option>
+          </Options>
+          <Explanation>Deploying a device configuration profile in Intune to configure Windows Hello for Business on all devices (A) is correct because it automates the setup of Windows Hello for Business across all managed devices, ensuring consistency and compliance with security policies. Creating a compliance policy in Intune that requires Windows Hello for Business (B) is also correct, as it enforces compliance by ensuring that devices meet the requirement for Windows Hello for Business before being granted access to corporate resources. Creating a Conditional Access policy in Microsoft Entra ID to restrict access to compliant devices (C) is incorrect because, while Conditional Access policies enforce access control, they do not directly configure or enforce the setup of Windows Hello for Business, which is the main goal. Using Group Policy to configure Windows Hello for Business (D) is incorrect, as the company is now using Microsoft Intune for device management, making Group Policy unnecessary in this cloud-based environment. [Manage devices joined to Microsoft Entra ID - Training | Microsoft Learn: https://learn.microsoft.com/training/modules/administer-device-authentication/5-manage-devices-joined-azure-active-directory] &amp; [Explore using co-management to transition to modern endpoint management - Training | Microsoft Learn: https://learn.microsoft.com/training/modules/plan-transition-modern-endpoint-management/2-explore-co-management-transition] &amp; [Manage and secure user and group identities in Microsoft Intune - Microsoft Intune | Microsoft Learn: https://learn.microsoft.com/mem/intune/fundamentals/manage-identities]</Explanation>
+        </Question>
       </Questions>
     </Section>
   </Sections>
